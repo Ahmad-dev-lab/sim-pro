@@ -8,32 +8,32 @@ export default function PopularDestinations() {
     {
       name: "Albania",
       image: "/images/countries/Albania.jpg",
-      flag: "/images/flags/albania.svg",
+      flag: "/images/flags/Albania.svg",
     },
     {
       name: "Australia",
       image: "/images/countries/Australia.jpg",
-      flag: "/images/flags/australia.svg",
+      flag: "/images/flags/Australia.svg",
     },
     {
       name: "Belgium",
       image: "/images/countries/Belgium.jpg",
-      flag: "/images/flags/belgium.svg",
+      flag: "/images/flags/Belgium.svg",
     },
     {
       name: "Albania",
       image: "/images/countries/Albania.jpg",
-      flag: "/images/flags/albania.svg",
+      flag: "/images/flags/Albania.svg",
     },
     {
       name: "Australia",
       image: "/images/countries/Australia.jpg",
-      flag: "/images/flags/australia.svg",
+      flag: "/images/flags/Australia.svg",
     },
     {
       name: "Belgium",
       image: "/images/countries/Belgium.jpg",
-      flag: "/images/flags/belgium.svg",
+      flag: "/images/flags/Belgium.svg",
     },
   ];
 

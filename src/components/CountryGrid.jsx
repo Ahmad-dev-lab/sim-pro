@@ -27,7 +27,7 @@ export default function PopularDestinations() {
 
   return (
     <section className="px-6 py-8 max-w-6xl mx-auto relative right-4">
-      {/* Title */}
+ 
       <div className="flex items-center gap-2 text-sm font-bold mb-2">
         <img src="/images/105.svg" alt="Logo" className="w-4 h-4" />
         All Countries
@@ -35,7 +35,7 @@ export default function PopularDestinations() {
 
       <h2 className="text-[30px] font-bold mb-4">Explore Countries</h2>
 
-  {/* Search Bar (styled like your screenshot) */}
+  
 <div className="mb-6 w-[40%] sm:w-1/2">
   <div className="relative flex items-center">
     <input
@@ -47,7 +47,7 @@ export default function PopularDestinations() {
     />
     <div className="absolute right-2 h-7 w-12 bg-yellow-400 rounded-full flex items-center justify-center">
       <img
-        src="/images/search-lg.svg" // your black magnifier icon
+        src="/images/search-lg.svg" 
         alt="Search"
         className="w-4 h-4"
       />
@@ -56,21 +56,21 @@ export default function PopularDestinations() {
 </div>
 
 
-      {/* Grid with 3 fixed columns */}
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
         {filteredCountries.map((country, index) => (
           <div
             key={index}
             className="bg-white rounded-2xl shadow hover:shadow-md transition p-3"
           >
-            {/* Image container */}
+            
             <div className="relative rounded-xl overflow-hidden h-[180px]">
               <img
                 src={`/images/countries/${country.name}.jpg`}
                 alt={country.name}
                 className="w-full h-full object-cover"
               />
-              {/* Flag */}
+              
               <div className="absolute top-2 left-2 bg-white rounded-full p-[2px] shadow w-[26px] h-[26px]">
                 <img
                   src={`/images/flags/${country.name}.svg`}
@@ -80,7 +80,7 @@ export default function PopularDestinations() {
               </div>
             </div>
 
-            {/* Country name */}
+            
             <div className="flex items-center justify-between mt-3 px-1">
               <span className="font-bold text-base">{country.name}</span>
               <span className="text-lg"><img src="/images/arrow.svg" alt="" className="h-4 w-4" /></span>

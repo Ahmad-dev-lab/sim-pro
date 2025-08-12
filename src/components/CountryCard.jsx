@@ -3,7 +3,7 @@ import React from "react";
 
 export default function CountryCard({ country }) {
   return (
-    <div className="bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition w-72 gap-0">
+    <div className="bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition w-72 gap-0 z-[9999]">
       <div className="relative p-3"> {/* p-3 yaha rakha taaki outer div ka gap na aaye */}
         {/* Main Country Image */}
         <img

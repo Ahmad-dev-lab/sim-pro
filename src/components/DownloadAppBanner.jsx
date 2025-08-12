@@ -25,6 +25,8 @@ export default function DownloadAppBanner() {
           <img src="/images/app-store.svg" alt="App Store" className="h-10" />
           <img src="/images/google-play.svg" alt="Google Play" className="h-10" />
         </div>
+                <span className="relative top-12"> Lorem ipsum dolor sit amet consectetur. <h1 className="font-bold mb-3 relative bottom-6 left-72"> Sed neque sit purus</h1> </span>
+
 </div>
 
 

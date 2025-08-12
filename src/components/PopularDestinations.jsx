@@ -73,13 +73,13 @@ export default function PopularDestinations() {
           </div>
         </div>
 
-        {/* Scrollable cards container */}
+        {/* Scrollable card list */}
         <div
           ref={scrollRef}
-          className="flex gap-6 overflow-x-auto overflow-y-hidden scroll-smooth"
+          className="flex gap-6 overflow-x-auto overflow-y-hidden scroll-smooth items-stretch pb-4"
           style={{
-            scrollbarWidth: "none", // Firefox
-            msOverflowStyle: "none", // IE 10+
+            scrollbarWidth: "none",
+            msOverflowStyle: "none",
           }}
         >
           <style>{`

@@ -23,7 +23,7 @@ export default function CountryCard({ country }) {
       {/* Country Name and Arrow */}
       <div className="flex justify-between items-center px-3 pb-3">
         <span className="font-bold text-gray-800">{country.name}</span>
-        <span className="text-gray-400 text-lg">→</span>
+              <span className="text-lg"><img src="/images/arrow.svg" alt="" className="h-4 w-4" /></span>
       </div>
     </div>
   );

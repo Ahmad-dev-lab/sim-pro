@@ -26,7 +26,7 @@ export default function PopularDestinations() {
   );
 
   return (
-    <section className="px-6 py-8 max-w-6xl mx-auto">
+    <section className="px-6 py-8 max-w-6xl mx-auto relative right-4">
       {/* Title */}
       <div className="flex items-center gap-2 text-sm font-bold mb-2">
         <img src="/images/105.svg" alt="Logo" className="w-4 h-4" />
@@ -36,7 +36,7 @@ export default function PopularDestinations() {
       <h2 className="text-[30px] font-bold mb-4">Explore Countries</h2>
 
   {/* Search Bar (styled like your screenshot) */}
-<div className="mb-6 w-[60%] sm:w-1/2">
+<div className="mb-6 w-[40%] sm:w-1/2">
   <div className="relative flex items-center">
     <input
       type="text"
@@ -83,7 +83,8 @@ export default function PopularDestinations() {
             {/* Country name */}
             <div className="flex items-center justify-between mt-3 px-1">
               <span className="font-bold text-base">{country.name}</span>
-              <span className="text-lg">→</span>
+              <span className="text-lg"><img src="/images/arrow.svg" alt="" className="h-4 w-4" /></span>
+
             </div>
           </div>
         ))}

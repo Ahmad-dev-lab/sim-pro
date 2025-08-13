@@ -26,7 +26,7 @@ export default function PopularDestinations() {
   );
 
   return (
-    <section className="px-6 py-8 max-w-6xl mx-auto relative right-4">
+    <section className="px-6 py-8 max-w-6xl mx-auto relative right-4 lg:ml-32 md:ml-11">
  
       <div className="flex items-center gap-2 text-sm font-bold mb-2">
         <img src="/images/105.svg" alt="Logo" className="w-4 h-4" />

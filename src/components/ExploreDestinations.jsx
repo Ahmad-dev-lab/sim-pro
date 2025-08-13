@@ -3,10 +3,10 @@ import React from "react";
 const ExploreDestinations = () => {
   return (
     <section className="w-full bg-white py-16 overflow-x-hidden">
-      {/* Container */}
-      <div className="w-full max-w-screen-xl mx-auto px-8 flex flex-col md:flex-row justify-between ml-7">
+     
+      <div className="w-full max-w-screen-xl mx-auto px-8 flex flex-col md:flex-row justify-between ml-7 lg:ml-28">
         
-        {/* Left Content */}
+      
         <div className="max-w-xl">
           <button
             style={{ border: "1px solid #DEDEDE" }}
@@ -27,12 +27,12 @@ const ExploreDestinations = () => {
           </p>
         </div>
 
-        {/* Right Image */}
+        
         <div className="mt-10 md:mt-0 mr-16">
           <img
             src="/images/suitcase.png"
             alt="Suitcase"
-            className="max-w-sm object-contain w-[340px] h-[269px] -rotate-6"
+            className="max-w-sm object-contain w-[340px] h-[269px] -rotate-6 lg:w-72 lg:h-60 lg:mr-44 md:w-60 md:h-48 sm:w-52 sm:h-40"
           />
         </div>
       </div>

@@ -3,10 +3,10 @@ import { FaLinkedin, FaInstagram, FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="bg-white px-6 py-12 text-sm text-gray-600 border-t">
+    <footer className="bg-white px-6 py-12 text-sm text-gray-600 border-t ">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-8">
 
-        {/* Left Section */}
+     
         <div className="flex-1 max-w-sm">
           <div className="flex items-center space-x-2 mb-4">
             <img src="/images/sim.png" alt="Logo" className="w-8 h-6" />
@@ -19,9 +19,9 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Center Columns */}
+      
         <div className="flex-1 grid grid-cols-2 sm:grid-cols-3 gap-8">
-          {/* Company Column */}
+  
           <div>
             <h4 className="font-semibold text-gray-800 mb-4">Company</h4>
             <ul className="space-y-2">
@@ -31,7 +31,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Resources Column */}
+         
           <div>
             <h4 className="font-semibold text-gray-800 mb-4">Resources</h4>
             <ul className="space-y-2">
@@ -41,7 +41,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Second Company Column */}
+         
           <div>
             <h4 className="font-semibold text-gray-800 mb-4">Company</h4>
             <ul className="space-y-2">
@@ -53,7 +53,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Right Section - Social & Copyright */}
+        
         <div className="flex flex-col items-end gap-4">
           <p>© 2024</p>
           <div className="flex space-x-4">

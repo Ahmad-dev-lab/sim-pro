@@ -47,7 +47,7 @@ export default function PopularDestinations() {
   };
 
   return (
-    <section className="px-6 py-8 relative lg:-left-9 md:ml-7">
+    <section className="px-6 py-8 relative lg:-left-9 md:ml-7 xxxs:-ml-2">
       <div className="max-w-6xl mx-auto">
        
         <div className="flex items-center gap-2 text-sm font-bold mb-2">
@@ -90,7 +90,7 @@ export default function PopularDestinations() {
           `}</style>
 
           {popularDestinations.map((country, index) => (
-            <div key={index} className="min-w-[280px]">
+            <div key={index} className="min-w-[280px] ">
               <CountryCard country={country} />
             </div>
           ))}

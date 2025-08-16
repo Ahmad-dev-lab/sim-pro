@@ -9,7 +9,7 @@ export default function CountryCard({ country }) {
         <img
           src={country.image}
           alt={country.name}
-          className="w-full h-40 object-cover rounded-xl"
+          className="w-full h-40 object-cover rounded-xl "
         />
 
         
@@ -21,7 +21,7 @@ export default function CountryCard({ country }) {
       </div>
 
   
-      <div className="flex justify-between items-center px-3 pb-3">
+      <div className="flex justify-between items-center px-3 pb-3 ">
         <span className="font-bold text-gray-800">{country.name}</span>
               <span className="text-lg"><img src="/images/arrow.svg" alt="" className="h-4 w-4" /></span>
       </div>

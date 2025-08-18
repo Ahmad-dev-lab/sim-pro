@@ -46,7 +46,7 @@ export default function PopularDestinations() {
   };
 
   return (
-    <section className="py-8">
+    <section className="py-8 xxxs:relative xxxs:bottom-10">
       {/* Centering container with max width and horizontal padding */}
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center gap-2 text-sm font-bold mb-2">
@@ -55,19 +55,19 @@ export default function PopularDestinations() {
         </div>
 
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-3xl font-bold">Popular Destination</h2>
+          <h2 className="text-3xl font-bold xxxs:text-4xl">Popular Destination</h2>
           <div className="flex gap-2">
             <button
               onClick={scrollLeft}
-              className="h-9 w-9 rounded-full flex items-center justify-center"
+              className="h-9 w-9 rounded-full flex items-center justify-center xxs:relative xxs:right-28 xxxs:relative xxxs:top-[310px] right-24 z-[9999]"
             >
-              <img src="/images/Frame 71.svg" alt="Left" className="h-6 w-6" />
+              <img src="/images/Frame 71.svg" alt="Left" className="h-8 w-8" />
             </button>
             <button
               onClick={scrollRight}
-              className="h-9 w-9 rounded-full flex items-center justify-center"
+              className="h-9 w-9 rounded-full flex items-center justify-center xxs:relative xxs:right-28 xxxs:relative xxxs:top-[310px] right-24 z-[9999]"
             >
-              <img src="/images/Frame 70.svg" alt="Right" className="h-6 w-6" />
+              <img src="/images/Frame 70.svg" alt="Right" className="h-8 w-8" />
             </button>
           </div>
         </div>

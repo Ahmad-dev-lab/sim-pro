@@ -32,8 +32,7 @@ export default function PopularDestinations() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const showLimitedCards =
-    windowWidth <= 640 && searchTerm.length === 0;
+  const showLimitedCards = windowWidth <= 640 && searchTerm.length === 0;
 
   const filteredCountries = allCountries.filter((country) =>
     country.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -45,15 +44,17 @@ export default function PopularDestinations() {
 
   return (
     <section className="px-6 py-8 max-w-6xl mx-auto">
+      {/* Header */}
       <div className="flex items-center gap-2 text-sm font-bold mb-2">
         <img src="/images/105.svg" alt="Logo" className="w-4 h-4" />
         All Countries
       </div>
 
-      <h2 className="text-[30px] font-bold mb-4 text-center md:text-left">
+      <h2 className="text-[30px] font-bold mb-4  md:text-left">
         Explore Countries
       </h2>
 
+      {/* Search Bar */}
       <div className="mb-6 w-full max-w-md mx-auto md:mx-0">
         <div className="relative flex items-center">
           <input
@@ -69,19 +70,35 @@ export default function PopularDestinations() {
         </div>
       </div>
 
+      {/* Grid of Cards */}
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-5">
         {countriesToShow.map((country, index) => (
           <div
             key={index}
-            className="bg-white rounded-2xl shadow hover:shadow-md transition p-3 mx-auto max-w-xs w-full"
+            className="
+              bg-white 
+              rounded-2xl 
+              shadow 
+              hover:shadow-md 
+              transition 
+              p-3 
+              mx-auto 
+              w-full 
+              max-w-[160px] 
+              xxxs:max-w-[140px] 
+              xxxs:h-[177px] 
+              sm:max-w-xs 
+              sm:h-auto
+            "
           >
-            <div className="relative rounded-xl overflow-hidden h-[180px]">
+            {/* Image Section */}
+            <div className="relative rounded-xl overflow-hidden h-[140px] xxxs:h-[120px]">
               <img
                 src={`/images/countries/${country.name}.jpg`}
                 alt={country.name}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-xl"
               />
-              <div className="absolute top-2 left-2 bg-white rounded-full p-[2px] shadow w-[26px] h-[26px] ">
+              <div className="absolute top-2 left-2 bg-white rounded-full p-[2px] shadow w-[26px] h-[26px]">
                 <img
                   src={`/images/flags/${country.name}.svg`}
                   alt={`${country.name} flag`}
@@ -90,8 +107,11 @@ export default function PopularDestinations() {
               </div>
             </div>
 
+            {/* Footer */}
             <div className="flex items-center justify-between mt-3 px-1">
-              <span className="font-bold text-base">{country.name}</span>
+              <span className="font-bold text-base truncate">
+                {country.name}
+              </span>
               <span className="text-lg">
                 <img src="/images/arrow.svg" alt="" className="h-4 w-4" />
               </span>

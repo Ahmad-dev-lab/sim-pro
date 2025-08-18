@@ -22,7 +22,7 @@ const ExploreDestinations = () => {
               <span className="block">Destinations</span>
             </h1>
 
-            <p className="text-gray-600 text-md w-[325px] mt-4">
+            <p className="text-gray-600 text-md w-[307px] mt-4">
               Find and buy the best prepaid eSIMs online for your travels.
               Connect to the internet in minutes in more than 197 destinations
               around the world.

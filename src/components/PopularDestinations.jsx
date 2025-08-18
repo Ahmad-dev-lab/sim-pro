@@ -38,16 +38,15 @@ export default function PopularDestinations() {
   ];
 
   const scrollLeft = () => {
-    scrollRef.current?.scrollBy({ left: -300, behavior: "smooth" });
+    scrollRef.current?.scrollBy({ left: -320, behavior: "smooth" });
   };
 
   const scrollRight = () => {
-    scrollRef.current?.scrollBy({ left: 300, behavior: "smooth" });
+    scrollRef.current?.scrollBy({ left: 320, behavior: "smooth" });
   };
 
   return (
-    <section className="py-8 xxxs:relative xxxs:bottom-10">
-      {/* Centering container with max width and horizontal padding */}
+    <section className="py-8 relative">
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center gap-2 text-sm font-bold mb-2">
           <img src="/images/105.svg" alt="Logo" className="w-4 h-4" />
@@ -55,17 +54,19 @@ export default function PopularDestinations() {
         </div>
 
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-3xl font-bold xxxs:text-4xl">Popular Destination</h2>
+          <h2 className="text-3xl font-bold">Popular Destination</h2>
+
+          
           <div className="flex gap-2">
             <button
               onClick={scrollLeft}
-              className="h-9 w-9 rounded-full flex items-center justify-center xxs:relative xxs:right-28 xxxs:relative xxxs:top-[310px] right-24 z-[9999]"
+              className="h-9 w-9 rounded-fullflex items-center justify-center"
             >
               <img src="/images/Frame 71.svg" alt="Left" className="h-8 w-8" />
             </button>
             <button
               onClick={scrollRight}
-              className="h-9 w-9 rounded-full flex items-center justify-center xxs:relative xxs:right-28 xxxs:relative xxxs:top-[310px] right-24 z-[9999]"
+              className="h-9 w-9 rounded-full  flex items-center justify-center"
             >
               <img src="/images/Frame 70.svg" alt="Right" className="h-8 w-8" />
             </button>
@@ -74,20 +75,20 @@ export default function PopularDestinations() {
 
         <div
           ref={scrollRef}
-          className="flex gap-6 overflow-x-auto overflow-y-hidden scroll-smooth items-stretch pb-4"
+          className="flex gap-4 overflow-x-auto scroll-smooth pb-4"
           style={{
             scrollbarWidth: "none",
             msOverflowStyle: "none",
           }}
         >
-          <style>{`
-            div::-webkit-scrollbar {
-              display: none;
-            }
-          `}</style>
+          <style>{`div::-webkit-scrollbar { display: none; }`}</style>
 
           {popularDestinations.map((country, index) => (
-            <div key={index} className="min-w-[280px]">
+            <div
+              key={index}
+              className="flex-shrink-0 w-[85vw] sm:w-[300px]"
+              style={{ scrollSnapAlign: "start" }}
+            >
               <CountryCard country={country} />
             </div>
           ))}

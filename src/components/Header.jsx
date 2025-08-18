@@ -4,7 +4,7 @@ import LanguageCurrencySelector from "./LanguageCurrencySelector";
 export default function Header() {
   return (
     <header className="flex justify-between items-center px-6 py-4 ml-7 shadow-sm bg-white sm:ml-0 xxxs:ml-0 w-full max-w-[1200px] mx-auto">
-      {/* Left side: Logo and menu */}
+    
       <div className="flex items-center space-x-2">
         <button className="hidden sm:block">
           <img src="/images/menu-01.svg" alt="icon" className="w-6 h-6" />
@@ -13,7 +13,7 @@ export default function Header() {
         <span className="font-bold text-lg ml-2">simfree</span>
       </div>
 
-      {/* Right side: Buttons and selectors */}
+    
       <div className="flex items-center space-x-4">
         <button className="block xs:block xxs:block xxxs:block sm:hidden">
           <img src="/images/menu-01.svg" alt="icon" className="w-6 h-6" />

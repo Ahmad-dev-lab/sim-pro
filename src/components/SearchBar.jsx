@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SearchBar({ onSearch }) {
   return (
-    <div className="flex items-center border rounded-full w-[350px] px-2 py-1 relative">
+    <div className="flex items-center border rounded-full w-[350px] px-2 py-1 relative sm:right-20">
       <input
         type="text"
         placeholder="Search"

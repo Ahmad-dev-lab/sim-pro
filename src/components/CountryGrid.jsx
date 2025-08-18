@@ -71,7 +71,7 @@ export default function PopularDestinations() {
       </div>
 
       {/* Grid of Cards */}
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-5">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {countriesToShow.map((country, index) => (
           <div
             key={index}
@@ -88,11 +88,11 @@ export default function PopularDestinations() {
               xxxs:max-w-[140px] 
               xxxs:h-[177px] 
               sm:max-w-xs 
-              sm:h-auto
+              sm:h-[210px]
             "
           >
             {/* Image Section */}
-            <div className="relative rounded-xl overflow-hidden h-[140px] xxxs:h-[120px]">
+            <div className="relative rounded-xl overflow-hidden h-[140px] xxxs:h-[120px] sm:h-[150px]">
               <img
                 src={`/images/countries/${country.name}.jpg`}
                 alt={country.name}

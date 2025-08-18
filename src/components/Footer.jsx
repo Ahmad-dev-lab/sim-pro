@@ -4,7 +4,7 @@ import { FaLinkedin, FaInstagram, FaXTwitter } from "react-icons/fa6";
 export default function Footer() {
   return (
     <footer className="bg-white px-6 py-12 text-sm text-gray-600 border-t ">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-8">
+      <div className="max-w-7xl mx-auto flex flex-col sm:flex-row md:flex-row justify-between items-start gap-8">
 
      
         <div className="flex-1 max-w-sm">
@@ -55,7 +55,7 @@ export default function Footer() {
 
         
         <div className="flex flex-col items-end gap-4">
-          <p className="xxxs:relative xxxs:left-48 xxxs:top-7 2xl:top-0 2xl:left-0 xl:top-0 xl:left-0 md:top-0 md:left-0">© 2024</p>
+          <p className="xxxs:relative xxxs:left-48 xxxs:top-7 2xl:top-0 sm:left-0 sm:top-3 sm:relative 2xl:left-0 xl:top-0 xl:left-0 md:top-0 md:left-0">© 2024</p>
           <div className="flex space-x-4">
             <a href="#" className="text-gray-500 hover:text-gray-800">
               <FaLinkedin size={18} />

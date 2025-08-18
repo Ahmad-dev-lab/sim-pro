@@ -32,10 +32,8 @@ export default function PopularDestinations() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Define breakpoints in px based on Tailwind defaults or your setup
-  // xxxs ~ <=320, xxs ~ <=375, xs ~ <=640, md ~ >=768 (md to 2xl covers >=768)
   const showLimitedCards =
-    windowWidth <= 640 && searchTerm.length === 0; // for xs, xxs, xxxs
+    windowWidth <= 640 && searchTerm.length === 0;
 
   const filteredCountries = allCountries.filter((country) =>
     country.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -46,15 +44,17 @@ export default function PopularDestinations() {
     : filteredCountries;
 
   return (
-    <section className="px-6 py-8 max-w-6xl mx-auto relative right-4 lg:ml-32 md:ml-11">
+    <section className="px-6 py-8 max-w-6xl mx-auto">
       <div className="flex items-center gap-2 text-sm font-bold mb-2">
         <img src="/images/105.svg" alt="Logo" className="w-4 h-4" />
         All Countries
       </div>
 
-      <h2 className="text-[30px] font-bold mb-4">Explore Countries</h2>
+      <h2 className="text-[30px] font-bold mb-4 text-center md:text-left">
+        Explore Countries
+      </h2>
 
-      <div className="mb-6 w-[40%] sm:w-1/2 xxxs:w-[112%]">
+      <div className="mb-6 w-full max-w-md mx-auto md:mx-0">
         <div className="relative flex items-center">
           <input
             type="text"
@@ -69,11 +69,11 @@ export default function PopularDestinations() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 xxxs:grid-cols-2 xxs:grid-cols-2 xs:grid-cols-2 md:grid-cols-3 gap-5">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-5">
         {countriesToShow.map((country, index) => (
           <div
             key={index}
-            className="bg-white rounded-2xl shadow hover:shadow-md transition p-3"
+            className="bg-white rounded-2xl shadow hover:shadow-md transition p-3 mx-auto max-w-xs w-full"
           >
             <div className="relative rounded-xl overflow-hidden h-[180px]">
               <img

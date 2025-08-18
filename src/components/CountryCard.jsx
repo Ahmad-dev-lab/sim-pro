@@ -1,18 +1,15 @@
-
 import React from "react";
 
 export default function CountryCard({ country }) {
   return (
-    <div className="bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition w-72 gap-0 z-[9999]">
+    <div className="bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition
+                    w-full max-w-xs sm:max-w-sm md:max-w-md z-[9999] mx-auto">
       <div className="relative p-3"> 
-      
         <img
           src={country.image}
           alt={country.name}
-          className="w-full h-40 object-cover rounded-xl "
+          className="w-full h-40 object-cover rounded-xl"
         />
-
-        
         <img
           src={country.flag}
           alt={`${country.name} flag`}
@@ -20,10 +17,11 @@ export default function CountryCard({ country }) {
         />
       </div>
 
-  
-      <div className="flex justify-between items-center px-3 pb-3 ">
+      <div className="flex justify-between items-center px-3 pb-3">
         <span className="font-bold text-gray-800">{country.name}</span>
-              <span className="text-lg"><img src="/images/arrow.svg" alt="" className="h-4 w-4" /></span>
+        <span className="text-lg">
+          <img src="/images/arrow.svg" alt="" className="h-4 w-4" />
+        </span>
       </div>
     </div>
   );

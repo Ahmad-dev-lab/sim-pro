@@ -3,9 +3,10 @@ import LanguageCurrencySelector from "./LanguageCurrencySelector";
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center px-6 py-4 ml-7 shadow-sm bg-white sm:ml-0 xxxs:ml-0 w-full max-w-[1200px] mx-auto">
+    <header className="flex justify-between items-center xl:ml-[590px] px-6 py-4 ml-7 shadow-sm bg-white sm:ml-0 xxxs:ml-0 w-full max-w-[1200px] mx-auto">
+
     
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center space-x-2 lg:ml-40">
         <button className="hidden sm:block">
           <img src="/images/menu-01.svg" alt="icon" className="w-6 h-6" />
         </button>
